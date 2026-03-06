@@ -1,207 +1,275 @@
----
+<div align="center">
 
-# 🔎 Resumind — Smart Resume Insights Powered by AI
+# 🔎 Resumind
 
-A lightweight, production-ready resume analysis platform built with **React + Vite** and **React Router**, powered by **Puter.js** for serverless backend logic, file storage, and AI inference. Upload your resume (PDF/TXT/DOCX) and get instant AI-driven insights on **ATS score**, **skills extraction**, **experience evaluation**, and **improvement suggestions**.
+### AI-Powered Resume Insights & ATS Analysis Platform
 
-<p align="center">
-  <img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react" />
-  <img src="https://img.shields.io/badge/Vite-5-purple?style=for-the-badge&logo=vite" />
-  <img src="https://img.shields.io/badge/React_Router-7-red?style=for-the-badge&logo=reactrouter" />
-  <img src="https://img.shields.io/badge/Puter.js-Serverless-brightgreen?style=for-the-badge&logo=cloudflareworkers" />
-  <img src="https://img.shields.io/badge/Docker-Ready-blue?style=for-the-badge&logo=docker" />
-  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
-</p>
+**A modern resume analysis platform that evaluates resumes using AI to provide ATS scores, skill extraction, experience analysis, and improvement suggestions.**
+*Upload your resume and receive intelligent insights instantly.*
 
----
+<br>
 
-## 📌 Table of Contents
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge\&logo=react)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-5-purple?style=for-the-badge\&logo=vite)](https://vitejs.dev/)
+[![React Router](https://img.shields.io/badge/React_Router-7-red?style=for-the-badge\&logo=reactrouter)](https://reactrouter.com/)
+[![Puter.js](https://img.shields.io/badge/Puter.js-Serverless_AI-brightgreen?style=for-the-badge)](https://puter.com/)
+[![Docker](https://img.shields.io/badge/Docker-Ready-blue?style=for-the-badge\&logo=docker)](https://www.docker.com/)
+[![MIT License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)]()
 
-* [About the Project](#-about-the-project)
-* [Features](#-features)
-* [Tech Stack](#-tech-stack)
-* [How It Works](#-how-it-works)
-* [Project Structure](#-project-structure)
-* [Getting Started](#️-getting-started)
-* [Environment Variables](#-environment-variables)
-* [Screenshots](#-screenshots)
-* [Docker](#-docker)
-* [Deploying with Puter](#-deploying-with-puter)
-* [Roadmap](#-roadmap)
-* [Contributing](#-contributing)
-* [Author](#-author)
+</div>
 
 ---
 
-## 📖 About the Project
+# 🌐 Live Demo
 
-The **AI Resume Analyzer** is designed to help users quickly evaluate their resumes using advanced AI models. By leveraging **Puter.js**, the app handles file parsing, storage, and AI inference with **zero backend servers**, giving you a fully serverless, scalable experience.
-
-🔗 **Live Deployment:** [https://marshmello-resumind.vercel.app/](https://marshmello-resumind.vercel.app/)
-🔗 **GitHub Repo:** [https://github.com/kishorekrrish3/AI-Resume-Analyzer](https://github.com/kishorekrrish3/AI-Resume-Analyzer)
-
-This project showcases real-world integration of serverless compute, client-side routing, and AI engineering — all wrapped in a clean, modern UI.
+🚀 **Try Resumind here:**
+👉 [https://marshmello-resumind.vercel.app/](https://marshmello-resumind.vercel.app/)
 
 ---
 
-## ✨ Features
+# 📖 What is Resumind?
 
-### 🖥️ Frontend
+Resumind is an **AI-powered resume analysis platform** that helps users evaluate their resumes using intelligent AI models.
 
-* Responsive, modern UI
-* Client-side routing using **React Router 7**
-* Fast dev experience powered by **Vite**
-* Modular and scalable component architecture
+Instead of manually reviewing resumes or relying on basic ATS checkers, Resumind provides **deep AI-driven insights** including:
 
-### 🤖 AI Features
-
-* Extracted details:
-
-  * Skills
-  * Experience
-  * Education
-  * Achievements
-* ATS scoring
+* ATS compatibility scoring
+* Skill extraction
+* Experience evaluation
+* Resume structure analysis
 * Improvement suggestions
-* AI-powered resume breakdown & summary
 
-### 🧠 Developer Experience
+The system uses **Puter.js** to provide a **fully serverless backend**, handling:
 
-* Serverless backend using Puter.js
-* No backend server required
-* File storage + AI inference fully handled via Puter workers
-* Easy deployment to Puter or Vercel
-* Docker-ready
+* file storage
+* resume parsing
+* AI inference
+* worker execution
 
----
-
-## 🧱 Tech Stack
-
-| Category         | Technologies                           |
-| ---------------- | -------------------------------------- |
-| Framework        | **React 18 (Vite)**                    |
-| Routing          | **React Router 7**                     |
-| Backend          | **Puter.js (serverless AI + storage)** |
-| Language         | JavaScript                             |
-| Styling          | CSS                                    |
-| Deployment       | Vercel / Puter                         |
-| Containerization | Docker                                 |
-| Version Control  | Git + GitHub                           |
+This eliminates the need for traditional backend infrastructure while maintaining scalability and performance.
 
 ---
 
-## ⚙️ How It Works
+# ✨ Features
 
-1. User uploads a resume file (`PDF / TXT / DOCX`).
-2. The file is handled by **Puter.js**, which provides file storage + secure access.
-3. A Puter worker performs AI inference using LLMs (GPT, Claude, Gemini etc.).
-4. AI extracts + structures:
-
-   * Skills
-   * Experience
-   * Education
-   * Key highlights
-   * ATS score
-5. Results are displayed using beautiful components (cards, badges, gauges).
-
-Puter abstracts away:
-
-* API keys
-* Server compute
-* File system
-* Backend infrastructure
+| Feature                        | Description                                     |
+| ------------------------------ | ----------------------------------------------- |
+| 📄 **Resume Upload**           | Upload resumes in PDF, DOCX, or TXT format      |
+| 🤖 **AI Resume Analysis**      | Extracts structured insights from resumes       |
+| 📊 **ATS Score Calculation**   | Evaluates resume compatibility with ATS systems |
+| 🧠 **Skill Extraction**        | Automatically detects technical and soft skills |
+| 💼 **Experience Breakdown**    | Analyzes professional experience                |
+| 📈 **Improvement Suggestions** | AI-generated resume optimization advice         |
+| ⚡ **Serverless Architecture**  | Powered by Puter.js workers                     |
 
 ---
 
-## 📁 Project Structure
+# 🏗️ System Architecture
 
+### Resume Analysis Pipeline
+
+```mermaid
+graph TD
+    A[👤 User Uploads Resume] --> B[React + Vite Frontend]
+
+    B --> C[Puter File Storage]
+
+    C --> D[Puter Worker]
+
+    D --> E[AI Inference Engine]
+
+    E --> F[Resume Parsing]
+
+    F --> G[Skill Extraction]
+    F --> H[Experience Evaluation]
+    F --> I[Education Parsing]
+
+    G --> J[ATS Score Calculation]
+    H --> J
+    I --> J
+
+    J --> K[Insights Dashboard]
 ```
-ai-resume-analyzer/
+
+---
+
+# 🛠️ Technology Stack
+
+### Frontend
+
+| Component  | Technology       |
+| ---------- | ---------------- |
+| Framework  | `React 18`       |
+| Build Tool | `Vite`           |
+| Routing    | `React Router 7` |
+| Styling    | `CSS`            |
+
+---
+
+### Backend (Serverless)
+
+| Component          | Technology           |
+| ------------------ | -------------------- |
+| Serverless Backend | `Puter.js`           |
+| File Storage       | Puter Storage        |
+| AI Inference       | Puter AI Workers     |
+| Resume Parsing     | Custom parsing logic |
+
+---
+
+### DevOps
+
+| Component        | Technology   |
+| ---------------- | ------------ |
+| Deployment       | Vercel       |
+| Containerization | Docker       |
+| Version Control  | Git + GitHub |
+
+---
+
+# ⚙️ How It Works
+
+Resumind follows a **serverless AI pipeline**:
+
+1️⃣ **Resume Upload**
+
+User uploads a resume file.
+
+Supported formats:
+
+* PDF
+* DOCX
+* TXT
+
+---
+
+2️⃣ **File Processing**
+
+Puter.js handles:
+
+* secure file storage
+* temporary file access
+* worker execution
+
+---
+
+3️⃣ **AI Analysis**
+
+AI models analyze the resume to extract:
+
+* skills
+* experience
+* education
+* key achievements
+
+---
+
+4️⃣ **ATS Scoring**
+
+The system calculates an **ATS compatibility score** based on:
+
+* keyword density
+* formatting
+* section completeness
+
+---
+
+5️⃣ **Insight Dashboard**
+
+Results are presented through interactive UI components such as:
+
+* score gauges
+* badges
+* resume summaries
+* improvement recommendations
+
+---
+
+# 📂 Project Structure
+
+```text
+AI-Resume-Analyzer/
 │
-├── .react-router/                # (optional) react-router generated files
-│
-├── app/                          # Main app source
-│   ├── components/               # UI components
-│   │   ├── Accordion.tsx
+├── app/
+│   ├── components/
+│   │   ├── FileUploader.tsx
+│   │   ├── ResumeCard.tsx
+│   │   ├── ScoreGauge.tsx
+│   │   ├── ScoreCircle.tsx
+│   │   ├── ScoreBadge.tsx
 │   │   ├── ATS.tsx
 │   │   ├── Details.tsx
-│   │   ├── FileUploader.tsx
-│   │   ├── Navbar.tsx
-│   │   ├── ResumeCard.tsx
-│   │   ├── ScoreBadge.tsx
-│   │   ├── ScoreCircle.tsx
-│   │   ├── ScoreGauge.tsx
 │   │   └── Summary.tsx
 │   │
-│   ├── lib/                      # Utilities & Puter integration
-│   │   ├── pdf2img.ts
+│   ├── lib/
 │   │   ├── puter.ts
+│   │   ├── pdf2img.ts
 │   │   └── utils.ts
 │   │
-│   ├── routes/                   # React Router route components
-│   │   ├── auth.tsx
+│   ├── routes/
 │   │   ├── home.tsx
-│   │   ├── resume.tsx
 │   │   ├── upload.tsx
-│   │   └── wipe.tsx
+│   │   ├── resume.tsx
+│   │   └── auth.tsx
 │   │
-│   ├── app.css                   # Global styles
-│   ├── root.tsx                  # App root / layout
-│   └── routes.ts                 # Route configuration
+│   ├── root.tsx
+│   └── app.css
 │
-├── build/                        # Build outputs (optional)
-│
-├── constants/                    # Global constants
+├── constants/
 │   └── index.ts
 │
-├── public/                       # Static assets (screenshots, icons)
+├── public/
 │   ├── screenshot-1.png
 │   ├── screenshot-2.png
 │   └── screenshot-3.png
 │
-├── types/                        # Type definitions
+├── types/
 │   ├── index.d.ts
 │   └── puter.d.ts
 │
-├── .dockerignore
-├── .gitignore
 ├── package.json
 └── README.md
 ```
 
 ---
 
-## 🖼️ Screenshots
+# 🚀 Installation & Setup
 
-![Home Page](./public/screenshot-1.png)
-![Login Page](./public/screenshot-2.png)
-![Upload Page](./public/screenshot-3.png)
-![Analysis Page](./public/screenshot-4.png)
+### Prerequisites
+
+* Node.js 18+
+* npm or yarn
 
 ---
 
-## 🔧 Getting Started
-
-### 1️⃣ Clone the repository
+# 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/kishorekrrish3/AI-Resume-Analyzer.git
 cd AI-Resume-Analyzer
 ```
 
-### 2️⃣ Install dependencies
+---
+
+# 2️⃣ Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 3️⃣ Start development server
+---
+
+# 3️⃣ Run Development Server
 
 ```bash
 npm run dev
 ```
 
-### 4️⃣ Open in browser
+---
+
+# 🌐 Local Development
+
+Open in browser:
 
 ```
 http://localhost:5173
@@ -209,29 +277,31 @@ http://localhost:5173
 
 ---
 
-## 🔐 Environment Variables
+# 🔐 Environment Variables
 
-If you use Puter workers or server-side tokens, create `.env`:
+Create a `.env` file in the root directory.
 
-```
-PUTER_API_KEY=your_key_here
-PUTER_WORKER_ID=your_worker_id_here
+```env
+PUTER_API_KEY=your_api_key
+PUTER_WORKER_ID=your_worker_id
 VITE_APP_BASE_URL=http://localhost:5173
 ```
 
-*(Puter.js often requires no keys for basic usage.)*
+Note: Many Puter features work without requiring API keys.
 
 ---
 
-## 🐳 Docker
+# 🐳 Docker Support
 
-### Build image
+### Build Docker Image
 
 ```bash
 docker build -t ai-resume-analyzer .
 ```
 
-### Run container
+---
+
+### Run Container
 
 ```bash
 docker run -p 3000:3000 ai-resume-analyzer
@@ -239,38 +309,68 @@ docker run -p 3000:3000 ai-resume-analyzer
 
 ---
 
-## ☁️ Deploying with Puter
+# 🚀 Deployment
 
-1. Go to Puter dashboard
-2. Link GitHub repo or upload the `/dist` build
-3. Add environment variables (if used)
-4. Publish — Puter gives you a live link instantly
-5. AI + file storage is auto-managed 🎉
+Resumind can be deployed using:
 
----
+### Vercel
 
-## 🛣️ Roadmap
-
-* Add resume history & versioning
-* Support multi-page resume parsing
-* Export analysis as PDF
-* User login + dashboards (via Puter Auth)
-* Choice of LLM model
-* Analytics (PostHog)
+1. Push project to GitHub
+2. Import repository into Vercel
+3. Configure environment variables
+4. Deploy
 
 ---
 
-## 🤝 Contributing
+### Puter Platform
 
-1. Fork the repo
+1. Open Puter Dashboard
+2. Connect GitHub repository
+3. Upload build folder
+4. Deploy instantly
+
+---
+
+# 🛣️ Roadmap
+
+Future improvements planned for Resumind:
+
+* Resume version history
+* Multi-page resume analysis
+* PDF export for analysis results
+* User authentication & dashboards
+* Multiple LLM model support
+* Analytics integration (PostHog)
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository
 2. Create a feature branch
-3. Run locally → make your changes
-4. Submit PR with description
+3. Commit your changes
+4. Open a pull request
 
 ---
 
-## 👤 Author
+# 👨‍💻 Author
 
 **Kishore P**
 AI & ML Enthusiast • Full-Stack Developer
-VIT Chennai
+CSE (AI & Robotics) — VIT Chennai
+
+---
+
+<div align="center">
+
+<br>
+
+<i>Helping professionals build stronger resumes using AI.</i>
+
+<br><br>
+
+**Resumind** — smarter resumes, better opportunities.
+
+</div>
