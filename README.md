@@ -20,6 +20,9 @@
 
 ---
 
+> **Project status:** Resume insights and ATS-style scores are heuristic guidance, not scores from a specific employer's applicant-tracking system and not a guarantee of interview or hiring outcomes. Review extracted content for errors before using it.
+
+
 # 🌐 Live Demo
 
 🚀 **Try Resumind here:**
